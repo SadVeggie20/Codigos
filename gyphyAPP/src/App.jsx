@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 function App () {
   const [gifs, setGifs] = useState([]) // aqui se guardan las Gifs
-  const APIKEY = 'X3AMixwUoMnUHf0z1JZhllNjimNZ91aa'
+  const APIKEY = import.meta.env.VITE_GIPHY_API_KEY
 
   // Las llamadas a la API se hacen en useEffect
 
